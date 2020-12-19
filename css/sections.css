@@ -50,11 +50,6 @@ section:nth-child(2), section:nth-child(3){
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	text-transform: uppercase;
-	font-family: 'Bebas Neue';
-	color: rgba(0,0,0,0.25);
-	mix-blend-mode: luminosity;
-	font-size: 12vw;
 }
 
 .overlay{
@@ -111,7 +106,7 @@ footer{
 		font-size: 2.78vw;
 	}
 
-	.card-img-top{
+	.card-img-top, .wave{
 		display: none;
 	}
 
@@ -142,9 +137,10 @@ footer{
 		font-size: 2.2vw;
 	}
 
-	.card-img-top{
+	.card-img-top, .wave{
 		display: none;
 	}
+
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -161,7 +157,7 @@ footer{
 	}*/
 
   	.homeContainer{
-		margin-left: 275px;
+		margin-left: 18vw;
 	}
 
   	.homeContainer h2{
@@ -195,5 +191,28 @@ footer{
 	.overlay{
 		height: 30vh;
 		width: 100vw;
+	}
+
+	.card-img-overlay{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		background-color: #ffffff;
+		opacity: 0;
+		margin-bottom: 34.25%;
+	}
+
+	.card-img-overlay:hover{
+		opacity: 1;
+		transition: 0.5s;
+		background-image: url(../images/overlay.png);
+	}
+
+	.card-title{
+		text-transform: uppercase;
+		font-family: 'Bebas Neue';
+		font-size: 9.5vw; 
+		color: #E85D75;
 	}
 } 
