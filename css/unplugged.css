@@ -1,0 +1,121 @@
+/*-------s:unplugged-------*/
+#unplugged{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.unpluggedDesc h1{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.unpluggedDesc p{ 
+	font-size: 85%;
+}
+
+.card-title{
+	font-weight: bold;
+	font-size: 95%;
+	color: #202A6A;
+}
+
+.jumbotron{
+	background-color: rgba(0,0,0,0);
+	text-align: center;
+}
+
+.unSpan{
+	color: #E85D75; 
+}
+
+.card-img-top{
+	width: 9rem;
+	height: 10rem;
+	margin-left: 25%;
+}
+
+.even{
+	width: 12rem;
+}
+
+.card{
+	padding: 0.5%;
+	border: none;
+	background-color: rgba(0,0,0,0);
+}
+
+/*-------s:unplugged-------*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+	.jumbotron{
+		padding: 1%;
+		margin-top: 15%;
+		margin-bottom: 15%;
+	}
+
+	.leadContainer{
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	.hobbyCards{	
+		margin-top: -15%;
+		margin-bottom: 5%;
+	}
+
+	.card-body{
+		height: 20vh;
+		font-size: 80%;
+	}
+
+	.card-img-top{
+		display: none;
+	}
+}
+
+/* Medium devices (landscape tablets, 601px and up) */
+@media only screen and (min-width: 601px){
+	
+	.jumbotron{
+		padding: 1%;
+		margin-top: 8%;
+		margin-bottom: 5%;
+	}
+
+	.leadContainer{
+		width: 70%;
+		margin-left: 15%;
+	}
+
+	.card-img-top{
+		display: none;
+	}
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	
+	.leadContainer{
+		width: 50%;
+		margin-left: 25%;
+	}
+
+	.hobbyContainer{
+		margin-left: 5%;
+		width: 95%;
+	}
+
+	.card-body{		
+		width: 80%; 
+		height: 20vh;
+		font-size: 80%;
+	}
+
+	.card-img-top{
+		display: flex;
+	}
+} 
