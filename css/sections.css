@@ -21,7 +21,7 @@ section:nth-child(2), section:nth-child(3){
 /*---------s: home---------*/
 
 .homeContainer{
-	background-color: rgba(0,0,0,0);
+	background-color: transparent;
 	width: 100%;
 	color: #231F20;
 }
@@ -33,7 +33,7 @@ section:nth-child(2), section:nth-child(3){
 /*---------s: home---------*/
 
 /*---------s:about---------*/
-.aboutContainer{
+.aboutContainer, .workContainer{
 	justify-content: center;
 	text-align: center;
 	align-content: center;
@@ -45,11 +45,8 @@ section:nth-child(2), section:nth-child(3){
 	color: #202A6A;
 }
 
-.centered {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.card a{
+	text-decoration: none;
 }
 
 .overlay{
@@ -57,13 +54,73 @@ section:nth-child(2), section:nth-child(3){
 	position: absolute;
 	bottom: 0;
 }
+
+.card-title:hover{
+	opacity: 1;
+	transition: 1s;
+}
+
+.card{
+	height: 20vh;
+	margin-top: 2vh;
+	border: none;
+}
+
+
+.card-title{
+	position: absolute;
+	text-transform: uppercase;
+	/*font-family: 'Bebas Neue';*/
+	color: #E85D75;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	background-color: #ffffff;
+	width: 95%;
+	height: 100%;
+	font-size: 10vw;
+	background-color: rgba(0,0,0,0);
+}
+
+.card-title:hover{
+	color: #202A6A;
+	opacity: 0.5;
+}
+
+.card-text{
+	position: absolute;
+	bottom: 0;
+	width: 95%;
+}
+
 /*---------s:about---------*/
 
 /*---------s: work---------*/
-#work svg{
-	position: absolute;
-	top: 0;
+.workContainer{
+	margin-left: 2.5vw;
 }
+
+.unSpan{
+	color: #202A6A;
+}
+
+#work button{
+	height: 10vh;
+	width: 100%;
+	background-color: transparent;
+	border: none; 
+	box-shadow: 0 2px 20px 0 rgba(1,1,1,0.24);
+	text-transform: uppercase;
+	color: #E85D75;
+	font-size: 9vw;
+}
+
+.wave{
+	position: absolute;
+	bottom: 0;
+}
+
 /*---------s: work---------*/
 
 /*---------sections---------*/
@@ -109,7 +166,6 @@ footer{
 	.card-img-top, .wave{
 		display: none;
 	}
-
 }
 
 /* Medium devices (landscape tablets, 601px and up) */
@@ -119,7 +175,7 @@ footer{
 	}
 
 	.homeContainer,.aboutContainer{
-		margin: 60px;
+		margin: 5vw;
 	}
 
  	.homeContainer h2{
@@ -151,10 +207,10 @@ footer{
 		background-image: url(../images/bg3.png);
 	}
 
-	/*section:nth-child(2){
-		background-color: #ffffff;
-		background-image: url(../images/bg1.png);
-	}*/
+	section:nth-child(3){
+		background-color: #E85D75;
+	background-image: linear-gradient(#E85D75,  #E85D75);
+	}
 
   	.homeContainer{
 		margin-left: 18vw;
@@ -180,6 +236,7 @@ footer{
 		height: 65vh;
 		width: 35vh;
 		border: none;
+		margin-top: -0.25%;
 	}
 
 	.card-img-top{
@@ -193,26 +250,35 @@ footer{
 		width: 100vw;
 	}
 
-	.card-img-overlay{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-content: center;
-		background-color: #ffffff;
-		opacity: 0;
-		margin-bottom: 34.25%;
-	}
-
-	.card-img-overlay:hover{
-		opacity: 1;
-		transition: 0.5s;
-		background-image: url(../images/overlay.png);
-	}
-
 	.card-title{
-		text-transform: uppercase;
-		font-family: 'Bebas Neue';
-		font-size: 9.5vw; 
+		height: 85%;
+		width: 100%;
+		opacity: 0;
+		margin-top: -165.75%;
+		margin-left: -8%;
+		background-color: #ffffff;
+		font-size: 6.5vw; 
+	}
+
+	.card-title:hover{
+		background-image: url(../images/overlay.png);
 		color: #E85D75;
+		opacity: 1;
+	}
+
+	p.card-text{
+		font-size: 1.2vw;
+		position: absolute;
+		bottom: 10%;
+		color: white !important;
+	}
+
+	#work button{
+		font-size: 2.5vw; 
+		color: #ffffff;
+	}
+
+	.wave{
+		display: flex;
 	}
 } 
