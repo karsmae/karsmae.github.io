@@ -99,6 +99,7 @@ section:nth-child(2), section:nth-child(3){
 /*---------s: work---------*/
 .workContainer{
 	margin-left: 2.5vw;
+	text-align: left;
 }
 
 .unSpan{
@@ -114,6 +115,10 @@ section:nth-child(2), section:nth-child(3){
 	text-transform: uppercase;
 	color: #E85D75;
 	font-size: 9vw;
+}
+
+#work li{
+	font-family: 'Montserrat';
 }
 
 .wave{
