@@ -157,7 +157,7 @@ img.profilePic{
 	font-weight: bolder;
 }	
 
-.languages h6{
+.languages h4{
 	background-color: #E85D75;
 	color: #ffffff;
 	margin-right: 0.5em;
@@ -166,12 +166,21 @@ img.profilePic{
 	border-radius: 5%;
 }
 
+#work h2{
+	font-size: 1.5rem;
+	font-weight: bolder;
+}
+
+#work h3{
+	font-size: 1rem;
+}
+
 .wip{
 	background-color: #202A6A !important;
 }
 
 .pending{
-	background-color: #231F20 !important;
+	background-color: #413A3B !important;
 }
 /*---------s: work---------*/
 
@@ -229,11 +238,11 @@ footer .contacts-btn:hover{
 		min-height: 45vh;
 	}
 
-	#work h4, #aboutMe h3, #aboutMe h4{
+	#work h2, #aboutMe h3, #aboutMe h4{
 		font-size: 1rem;
 	}
 
-	#work h4{
+	#work h2{
 		font-weight: bolder;
 	}
 
