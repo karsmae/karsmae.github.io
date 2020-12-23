@@ -135,6 +135,10 @@ img.profilePic{
 	align-content: center;
 	width: 95%;
 }
+
+.alt-text{
+	display: none;
+}
 /*---------s:about---------*/
 
 /*---------s: work---------*/
@@ -157,7 +161,7 @@ img.profilePic{
 	font-weight: bolder;
 }	
 
-.languages h4{
+.languages h3{
 	background-color: #E85D75;
 	color: #ffffff;
 	margin-right: 0.5em;
@@ -171,7 +175,7 @@ img.profilePic{
 	font-weight: bolder;
 }
 
-#work h3{
+#work h4{
 	font-size: 1rem;
 }
 
