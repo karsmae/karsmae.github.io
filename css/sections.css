@@ -11,12 +11,34 @@ section{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	background-image: url(../images/bg2.png);
 }
 
-section:nth-child(2), section:nth-child(3){
+section:nth-child(2), section:nth-child(3), section:nth-child(4){
 	background-color: #ffffff;
 	background-image: linear-gradient(#ffffff,  #ffffff);
 }
+
+#aboutMe{
+	min-height: 55vh;
+}
+
+#about{
+	min-height: 5vh;
+}
+
+.card-title, #work button{
+	text-transform: uppercase;
+	color: #E85D75;
+	font-weight: bolder;
+	font-family: 'Nunito';
+}
+
+.card-body, #work button{
+	background-color: transparent;
+	border: none; 
+	box-shadow: 0 2px 20px 0 rgba(1,1,1,0.24);
+} 
 
 /*---------s: home---------*/
 
@@ -30,9 +52,86 @@ section:nth-child(2), section:nth-child(3){
 	font-family: 'Righteous';
 }
 
+.homeContainer h3, #about p{
+	color: #202A6A;
+}
 /*---------s: home---------*/
 
 /*---------s:about---------*/
+.aboutMeContainer{
+	width: 95%;
+	margin-top: 5vh;
+}
+
+.about-title h1, #work h1{
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+
+.about-title span, #work h1 span{
+	color: #202A6A;
+}
+
+.about-desc p{
+	text-align: left;
+	width: 85%;
+	color: #231F20 !important;
+}
+
+.profilePic{
+	height: 55vh;
+	position: relative;
+	bottom: 0;
+}
+
+.about-title, .about-desc, .profilePic{
+	display: none;
+}
+
+.contacts-btn{
+	border-radius: 100%;
+	border: none;
+	background-color: #E85D75;
+	height: 2em;
+	width: 2em;
+	margin: 1%;
+}
+
+.contacts-btn a{
+	color: #ffffff;
+}
+
+.contacts-btn:hover{
+	background-color: #202A6A;
+}
+
+.cursive{
+	font-family: 'Stalemate';
+	display: none;
+}
+
+.link{
+	display: none;
+}
+
+#aboutMe span, #work span{
+	color: #E85D75;
+	font-weight: bold;
+}
+
+.intro{
+	font-weight: bold;
+}
+
+#aboutMe p, #work h5{
+	font-family: 'Montserrat';
+	font-size: 0.85rem;
+}
+
+#about a{
+	text-decoration: none;
+}
+
 .aboutContainer, .workContainer{
 	justify-content: center;
 	text-align: center;
@@ -40,58 +139,8 @@ section:nth-child(2), section:nth-child(3){
 	width: 95%;
 }
 
-.aboutContainer p{
-	font-family: 'Nunito';
-	color: #202A6A;
-}
-
-.card a{
-	text-decoration: none;
-}
-
-.overlay{
-	background-color: #E85D75;
-	position: absolute;
-	bottom: 0;
-}
-
-.card-title:hover{
-	opacity: 1;
-	transition: 1s;
-}
-
-.card{
-	height: 20vh;
-	margin-top: 2vh;
-	border: none;
-}
-
-
-.card-title{
-	position: absolute;
-	text-transform: uppercase;
-	/*font-family: 'Bebas Neue';*/
-	color: #E85D75;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
-	background-color: #ffffff;
-	width: 95%;
-	height: 100%;
-	font-size: 10vw;
-	background-color: rgba(0,0,0,0);
-}
-
-.card-title:hover{
-	color: #202A6A;
-	opacity: 0.5;
-}
-
-.card-text{
-	position: absolute;
-	bottom: 0;
-	width: 95%;
+.about-img{
+	display: none;
 }
 
 /*---------s:about---------*/
@@ -102,30 +151,41 @@ section:nth-child(2), section:nth-child(3){
 	text-align: left;
 }
 
-.unSpan{
+.highlights{
 	color: #202A6A;
 }
 
 #work button{
 	height: 10vh;
 	width: 100%;
-	background-color: transparent;
-	border: none; 
-	box-shadow: 0 2px 20px 0 rgba(1,1,1,0.24);
-	text-transform: uppercase;
-	color: #E85D75;
-	font-size: 9vw;
 }
 
 #work li{
 	font-family: 'Montserrat';
 }
 
-.wave{
+.wave, .splitHorizon{
+	display: none;
 	position: absolute;
-	bottom: 0;
+	top: 0;
 }
 
+.workContainer h1{
+	font-weight: bolder;
+}	
+
+.languages h6{
+	background-color: #E85D75;
+	color: #ffffff;
+	margin-right: 0.5em;
+	padding: 0.45em;
+	font-size: 80%;
+	border-radius: 5%;
+}
+
+.wip{
+	background-color: #202A6A !important;
+}
 /*---------s: work---------*/
 
 /*---------sections---------*/
@@ -144,13 +204,12 @@ footer{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-
-	section{
-		background-image: url(../images/bg2.png);
+	.homeContainer{
+		margin: 2vw;
 	}
 
-	.homeContainer,.aboutContainer{
-		margin: 25px;
+	.aboutContainer, .aboutMeContainer{
+		margin: 5vw;
 	}
 
   	.homeContainer h2{
@@ -161,29 +220,21 @@ footer{
 		font-size: 15vw;
 		margin-top: -9.5vw;
 		margin-bottom: -2.5vw;
-		color: #202A6A;
 	}
 
 	.homeContainer h4{
 		font-size: 2.78vw;
 	}
 
-	.card-img-top, .wave{
-		display: none;
-	}
 }
 
 /* Medium devices (landscape tablets, 601px and up) */
 @media only screen and (min-width: 601px){
-	section{
-		background-image: url(../images/bg2.png);
-	}
-
 	.homeContainer,.aboutContainer{
 		margin: 5vw;
 	}
 
- 	.homeContainer h2{
+	.homeContainer h2{
 		font-size: 25vw;
 	}
 
@@ -191,15 +242,10 @@ footer{
 		font-size: 12vw;
 		margin-top: -8vw;
 		margin-bottom: -2vw;
-		color: #202A6A;
 	}
 
 	.homeContainer h4{
 		font-size: 2.2vw;
-	}
-
-	.card-img-top, .wave{
-		display: none;
 	}
 
 } 
@@ -214,7 +260,7 @@ footer{
 
 	section:nth-child(3){
 		background-color: #E85D75;
-	background-image: linear-gradient(#E85D75,  #E85D75);
+		background-image: linear-gradient(#E85D75,  #E85D75);
 	}
 
   	.homeContainer{
@@ -236,54 +282,31 @@ footer{
 		font-size: 1.3vw;
 	}
 
-	.card{
-		background-color: rgba(0,0,0,0);
-		height: 65vh;
-		width: 35vh;
-		border: none;
-		margin-top: -0.25%;
+	#about h2{
+		font-size: 2vw;
 	}
 
-	.card-img-top{
-		display: flex;
-		flex-direction: column;
-		flex-shrink: 2;
-	}
-
-	.overlay{
-		height: 30vh;
-		width: 100vw;
-	}
-
-	.card-title{
-		height: 85%;
-		width: 100%;
-		opacity: 0;
-		margin-top: -165.75%;
-		margin-left: -8%;
-		background-color: #ffffff;
-		font-size: 6.5vw; 
-	}
-
-	.card-title:hover{
+	#about a:hover{
 		background-image: url(../images/overlay.png);
-		color: #E85D75;
-		opacity: 1;
 	}
 
-	p.card-text{
-		font-size: 1.2vw;
-		position: absolute;
-		bottom: 10%;
-		color: white !important;
-	}
-
-	#work button{
-		font-size: 2.5vw; 
-		color: #ffffff;
-	}
-
-	.wave{
+	.profilePic, .cursive, .link, .about-title, .about-desc{
 		display: flex;
+	}
+
+	.aboutCards{
+		margin-top: 3%;
+	}
+
+	.about-title h1, #work h1{
+		text-align: right;
+	}
+
+	.wave,.splitHorizon{
+		display: flex;
+	}
+
+	.workContainer row{
+		height: 50vh;
 	}
 } 
