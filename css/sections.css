@@ -20,11 +20,11 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4){
 }
 
 #aboutMe{
-	min-height: 55vh;
+	min-height: 65vh;
 }
 
 #about{
-	min-height: 5vh;
+	min-height: 10vh;
 }
 
 .card-title{
@@ -45,6 +45,7 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4){
 .homeContainer{
 	background-color: transparent;
 	width: 100%;
+	padding: 2%;
 	color: #231F20;
 }
 
@@ -55,12 +56,15 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4){
 .homeContainer h3, #about p{
 	color: #202A6A;
 }
+
+.homeContainer span{
+	color: #ffffff;
+}
 /*---------s: home---------*/
 
 /*---------s:about---------*/
 .aboutMeContainer{
 	width: 95%;
-	margin-top: 5vh;
 }
 
 .about-title h1, #work h1{
@@ -78,10 +82,8 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4){
 	color: #231F20 !important;
 }
 
-.profilePic{
+img.profilePic{
 	height: 55vh;
-	position: relative;
-	bottom: 0;
 }
 
 .about-title, .about-desc, .profilePic, .about-img, .link, .project-title, .cursive{
@@ -180,9 +182,13 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4){
 footer{
 	text-align: center;
 	background-color: #E85D75;
-	padding: 5%;
+	padding: 2%;
 	color: #ffffff !important;
-	height: 25vh;
+	height: 15vh;  
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
 }
 
 footer .contacts-btn{
@@ -201,10 +207,6 @@ footer .contacts-btn:hover{
 		margin: 2vw;
 	}
 
-	.aboutContainer, .aboutMeContainer{
-		margin: 5vw;
-	}
-
   	.homeContainer h2{
 		font-size: 30vw;
 	}
@@ -217,6 +219,38 @@ footer .contacts-btn:hover{
 
 	.homeContainer h4{
 		font-size: 2.78vw;
+	}
+
+	.aboutContainer, .aboutMeContainer{
+		margin: 5vw;
+	}
+
+	#aboutMe{
+		min-height: 45vh;
+	}
+
+	#work h4, #aboutMe h3, #aboutMe h4{
+		font-size: 1rem;
+	}
+
+	#work h4{
+		font-weight: bolder;
+	}
+
+	#aboutMe p{
+		font-size: 0.75rem;
+	}
+
+	.aboutContainer{
+		margin-top: -10vh;
+	}
+
+	.aboutContainer h2, .aboutContainer p{
+		font-size: 0.85rem;
+	}
+
+	.workContainer{
+		margin-top: 10vh;
 	}
 
 }
@@ -239,6 +273,23 @@ footer .contacts-btn:hover{
 
 	.homeContainer h4{
 		font-size: 2.2vw;
+		color: #231F20 !important;
+	}
+
+	.homeContainer h3 span{
+		color: #202A6A !important;
+	}
+
+	.homeContainer h4 span{
+		color: #231F20 !important;
+	}
+
+	.aboutMeContainer{
+		margin-top: 5vh;
+	}
+
+	.aboutContainer{
+		margin-top: -8vh;
 	}
 
 } 
@@ -271,6 +322,10 @@ footer .contacts-btn:hover{
 		color: #E85D75;
 	}
 
+	.homeContainer h3 span{
+		color: #E85D75 !important;
+	}
+
 	.homeContainer h4{
 		font-size: 1.3vw;
 	}
@@ -283,6 +338,14 @@ footer .contacts-btn:hover{
 		background-image: url(../images/overlay.png);
 	}
 
+	.sideProfile{
+		margin-bottom: -0.5rem !important;
+	}
+
+	img.profilePic{
+		margin-top: 9.5rem;
+	}
+
 	.profilePic, .cursive, .link, .about-title, .about-desc, .project-title{
 		display: flex;
 	}
@@ -293,11 +356,17 @@ footer .contacts-btn:hover{
 	}
 
 	.aboutCards{
-		margin-top: 3%;
+		margin-top: 10vh;
 	}
 
 	.about-title h1, #work h1{
 		text-align: right;
+	}
+
+	.introduction{
+		margin-top: 10vh;
+		margin-bottom: 2vh;
+		height: 35vh;
 	}
 
 	.wave,.splitHorizon{
