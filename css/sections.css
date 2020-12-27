@@ -321,7 +321,7 @@ footer .contacts-btn:hover{
 	}
 
   	.homeContainer{
-		margin-left: 18vw;
+		margin-left: 15vw;
 	}
 
   	.homeContainer h2{
@@ -365,15 +365,19 @@ footer .contacts-btn:hover{
 
 	.project-title{
 		text-align: right;
-		margin-top: 11%;
+		margin-top: 2.25vh;
 	}
 
 	.aboutCards{
-		margin-top: 10vh;
+		margin-top: 11.5vh;
 	}
 
 	.about-title h1, #work h1{
 		text-align: right;
+	}
+
+	.about-title, .about-desc{
+		margin-top: 3vh;
 	}
 
 	.introduction{

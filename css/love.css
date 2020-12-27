@@ -1,0 +1,132 @@
+.navbar a, .hamburger{
+	color: #ffffff;
+}
+
+.carousel-item{
+	/*background-color: red;*/
+	background-position: center;
+	background-size: cover;
+	min-height: 100vh;
+}
+
+.carousel-item:before{
+	content: '';
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index: -1;
+}
+
+.carousel-item h2{
+	color: #ffffff;
+	opacity: 0;
+}
+
+.carousel-item p{
+	margin-bottom: 40vh;	
+	color: #eeeeee;
+	opacity:0;
+}
+
+.carousel-item.active h2{
+	animation: fadeInLeft 0.5s ease forwards;
+}
+
+.carousel-item.active p{
+	animation: fadeInRight 0.5s ease forwards;
+}
+
+@keyframes fadeInLeft{
+	0%{
+		opacity: 0;
+		transform: translateX(-30px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+@keyframes fadeInRight{
+	0%{
+		opacity: 0;
+		transform: translateX(30px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.unSpan, .navbar a:hover{
+	color: #E85D75; 
+}
+
+.carousel-indicators li{
+	height: 50px;
+	width: 50px;
+	margin:0 5px;
+	border-radius: 50%;
+	background-position: center;
+	background-size: cover;
+	border:3px solid transparent;
+	transition: all 0.3s ease;
+}
+
+.carousel-indicators li.active{
+	border-color: #ffffff;
+	transform: scale(1.2);
+}
+
+
+.carnations{
+	background-image: url("../images/carnation2.jpg");
+}
+
+.sims{
+	background-image: url("../images/sims.jpg");
+}
+
+.detective{
+	background-image: url("../images/detective.jpg");
+}
+
+.prince{
+	background-image: url("../images/prince.jpg");
+}
+
+.prince-i{
+	background-image: url("../images/prince-icon.jpg");
+}
+
+.watermelon{
+	background-image: url("../images/watermelon.jpg");
+}
+
+.credits{
+	position: absolute;
+	bottom: 8px;
+	right: 16px;
+	font-size: 0.75em;
+	color: #ffffff;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+	.carousel-indicators li{
+		height: 40px;
+		width: 40px;
+		margin-bottom: 5%;
+	}
+
+	.prince{
+		background-image: url("../images/prince-icon.jpg");
+	}
+}
+
+/*carousel code
+The Webshala [YouTube video] from https://www.youtube.com/watch?fbclid=IwAR1ZHwl92rImclc7ceLMdToZdBWdSqliFtcHkRmNrwKZKlfCgO15g3im9A0&v=aiedzAHmVII&feature=youtu.be
+*/
