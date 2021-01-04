@@ -347,7 +347,7 @@ footer .contacts-btn:hover{
 		font-size: 2vw;
 	}
 
-	#about a:hover{
+	.about-tile:hover{
 		background-image: url(../images/overlay.png);
 	}
 
